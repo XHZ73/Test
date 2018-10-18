@@ -1,0 +1,26 @@
+#配置Tomcat端口号
+server:
+  port: 9990
+#配置springboot项目名
+spring:
+  application:
+    name: test
+#配置视图解析器的前后缀
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  http:  
+    encoding:
+      charset: utf-8
+      enabled: true 
+ # 配置数据库连接信息     
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kaoshi
+    username: root
+    password: java   
+#添加JPA配置信息    
+  jpa: 
+    show-sql: true
+    open-in-view: true   
